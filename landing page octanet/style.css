@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main page start */
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Home section start */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pexels-pixabay-50597.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Nav Bar start */
+.nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.home .nav img {
+    filter: contrast(0%);
+    filter: brightness(100);
+    width: 7%;
+}
+
+.nav img:hover {
+    scale: 1.1;
+}
+
+.menu {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu a:hover {
+    color: yellow;
+    scale: 1.1;
+}
+
+/* Nav Bar close */
+
+.home h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    font-size: 7vw;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 5px 5px black;
+}
+
+.home h1 span {
+    color: yellow;
+}
+
+.home #jointoday {
+    color: black;
+    position: relative;
+    top: 58%;
+    left: 42%;
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: yellow;
+    text-transform: capitalize;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+/* Home section close */
+
+/* About section start */
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.about-text {
+    margin: 7% 0 5%;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 2vw;
+}
+
+.about-text h1 span {
+    color: yellow;
+}
+
+.box {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 5vw;
+    perspective: 900px;
+
+}
+
+.box1 {
+    width: 20vw;
+    height: 53vh;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.about .box1:hover {
+    transform: rotateY(180deg);
+}
+
+.front1, .back1 {
+    margin-top: 7px;
+    width: 19vw;
+    height: 51vh;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.box1 .front1 {
+    background-image: url(https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+}
+
+.back1 {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.back1 h1 {
+    font-size: 3vw;
+    padding: 0 0 10px;
+}
+
+.back1 h1 span {
+    color: yellow;
+}
+
+.back1 p {
+    line-height: 1.5vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.box2 {
+    width: 20vw;
+    height: 53vh;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.about .box2:hover {
+    transform: rotateY(180deg);
+}
+
+.front2, .back2 {
+    margin-top: 7px;
+    width: 19.5vw;
+    height: 51.5vh;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.box2 .front2 {
+    background-image: url(https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+}
+
+.back2 {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.back2 h1 {
+    font-size: 3vw;
+    padding: 0 0 10px;
+}
+
+.back2 h1 span {
+    color: yellow;
+}
+
+.back2 p {
+    line-height: 1.5vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.box3 {
+    width: 20vw;
+    height: 53vh;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.about .box3:hover {
+    transform: rotateY(180deg);
+}
+
+.front3, .back3 {
+    margin-top: 7px;
+    width: 19.5vw;
+    height: 51vh;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.box3 .front3 {
+    background-image: url(https://images.pexels.com/photos/2468339/pexels-photo-2468339.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+}
+
+.back3 {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.back3 h1 {
+    font-size: 3vw;
+    padding: 0 0 10px;
+}
+
+.back3 h1 span {
+    color: yellow;
+}
+
+.back3 p {
+    line-height: 1.5vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* About section close */
+/* join section start */
+
+.join {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.join-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-box1, .join-box2, .join-box3 {
+    width: 50%;
+    height: 100vh;
+    color: white;
+    border: 1px solid white;
+}
+
+.join-box1 img, .join-box3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.join-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-box2 h1 {
+    font-family: 'Kanit', sans-serif;
+    padding: 4vw 0 2vw;
+    font-size: 3.5vw;
+}
+
+.join-box2 h1 span {
+    color: yellow;
+}
+
+.join-box2 ul {
+    font-size: 1.5vw;
+    font-family: 'Kanit';
+    line-height: 3rem;
+}
+
+.join-box2 a {
+    margin: 60px 0 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+}
+
+.join-box2 h1:hover, .join-box2 a:hover {
+    scale: 1.1;
+}
+
+/* join section close */
+
+
+/* Result section start */
+
+.result {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.result-text {
+    font-size: 2.3vw;
+    margin-top: 7vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+}
+
+.result-text:hover {
+    scale: 1.1;
+    text-shadow: 2px 2px red;
+}
+
+.result-box {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-box1 {
+    width: 25%;
+    height: 65vh;
+    margin-top: -9vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+.result-box1 img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.result-box1 img:hover {
+    scale: 1.2;
+}
+
+.result-box2 {
+    width: 25%;
+    height: 65vh;
+    margin-top: 3vw;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+.result-box2 img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.result-box2 img:hover {
+    scale: 1.2;
+}
+
+/* Result section close */
+/* contact section start */
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.contact-box {
+    background-image: url(pexels-andrea-piacquadio-3838381.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+}
+
+.contact-form {
+    width: 40%;
+    height: 60vh;
+    transform: translate(20%, 20%);
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.contact-form h1 {
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 2vw 0 0 0;
+}
+
+.contact-form h1:hover {
+    scale: 1.1;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1vw 0 0 0;
+    padding: 0 3vw;
+}
+
+.contact-form form input {
+    margin: 1vw 0;
+    height: 2.5vw;
+    border: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    outline: none;
+}
+
+.contact-form form button {
+    background-color: gainsboro;
+    border: none;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transform: translate(190%, 40%);
+    box-shadow: 0 2px 2px grey;
+}
+
+form button:hover {
+    box-shadow: 0 2px 5px grey;
+}
+
+.contact-icon {
+    background-color: rgba(255, 0.5, 55, .05);
+    width: 100%;
+    height: calc(100vh - 80vh);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-box1 {
+    width: 50%;
+    height: 20vh;
+    padding: 3vw;
+}
+
+.icons-box1 i {
+    font-size: 2.5vw;
+    margin: 0 3vw;
+    padding: 0 0 1vw 0;
+}
+
+.icons-box2 {
+    width: 50%;
+    height: 20vh;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: .7vw;
+}
+
+.icons-box2 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: white;
+}
+
+/* contact section close */
